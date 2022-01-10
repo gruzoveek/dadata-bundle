@@ -1,13 +1,13 @@
 {
-    "name": "velhron/dadata-bundle",
+    "name": "gruzoveek/dadata-bundle",
     "description": "DaData for Symfony",
     "keywords": ["dadata", "symfony-bundle", "symfony-dadata"],
     "type": "symfony-bundle",
     "license": "MIT",
     "authors": [
         {
-            "name": "velhron",
-            "email": "velhron@gmail.com"
+            "name": "gruzoveek",
+            "email": "gruzoveek@gmail.com"
         }
     ],
     "require": {
