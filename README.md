@@ -17,7 +17,7 @@ Symfony DaDataBundle предназначен для работы с API сер�
 Откройте командную консоль, перейдите в каталог вашего проекта и выполните:
 
 ```bash
-composer require velhron/dadata-bundle
+composer require gruzoveek/dadata-bundle
 ```
 
 ### Приложения, которые не используют Symfony Flex
@@ -28,7 +28,7 @@ composer require velhron/dadata-bundle
 стабильную версию этого пакета:
 
 ```bash
-composer require velhron/dadata-bundle
+composer require gruzoveek/dadata-bundle
 ```
 
 #### Шаг #2: Активация бандла
