@@ -4,8 +4,6 @@
 
 ## Описание
 
-Клон https://github.com/Velhron/dadata-bundle под php8 и Symfony 6
-
 Symfony DaDataBundle предназначен для работы с API сервиса [ДаДата](https://dadata.ru).
 
 ## Установка

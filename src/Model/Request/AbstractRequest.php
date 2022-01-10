@@ -1,29 +1,21 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Model\Request;
 
 abstract class AbstractRequest
 {
-    /**
-     * @var string Текст запроса
-     */
-    protected $query;
+    /** Текст запроса */
+    protected string $query;
 
-    /**
-     * @var string URL запроса
-     */
-    private $requestUrl;
+    /** URL запроса */
+    private string $requestUrl;
 
     public function __construct(string $url)
     {
         $this->requestUrl = $url;
     }
 
-    /**
-     * Тело запроса.
-     */
+    /** Тело запроса. */
     abstract public function getBody(): array;
 
     public function setQuery(string $query): self

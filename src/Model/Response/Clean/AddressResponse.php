@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Model\Response\Clean;
 
 use Velhron\DadataBundle\Traits\Address;
@@ -10,8 +8,7 @@ class AddressResponse extends CleanResponse
 {
     use Address;
 
-    /**
-     * @var int Код пригодности к рассылке
+    /** Код пригодности к рассылке
      *
      * 0  - Да (Пригоден для почтовой рассылки)
      * 10 - Под вопросом (Дома нет в ФИАС)
@@ -23,17 +20,12 @@ class AddressResponse extends CleanResponse
      * 3  - Нет (Нет улицы)
      * 4  - Нет (Нет дома)
      * 6  - Нет (Адрес неполный)
-     * 7  - Нет (Иностранный адрес)
-     */
-    public $qcComplete;
+     * 7  - Нет (Иностранный адрес) */
+    public int $qcComplete;
 
-    /**
-     * @var int Признак наличия дома в ФИАС
-     */
-    public $qcHouse;
+    /** Признак наличия дома в ФИАС */
+    public int $qcHouse;
 
-    /**
-     * @var string Нераспознанная часть адреса
-     */
-    public $unparsedParts;
+    /** Нераспознанная часть адреса */
+    public string $unparsedParts;
 }

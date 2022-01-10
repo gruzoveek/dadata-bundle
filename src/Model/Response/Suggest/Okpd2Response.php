@@ -1,28 +1,18 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Model\Response\Suggest;
 
 class Okpd2Response extends SuggestResponse
 {
-    /**
-     * @var string Индекс (раздел + код)
-     */
-    public $idx;
+    /** Индекс (раздел + код) */
+    public string $idx;
 
-    /**
-     * @var string Код раздела
-     */
-    public $razdel;
+    /** Код раздела */
+    public string $razdel;
 
-    /**
-     * @var string Код
-     */
-    public $kod;
+    /** Код */
+    public string $kod;
 
-    /**
-     * @var string Наименование
-     */
-    public $name;
+    /** Наименование */
+    public string $name;
 }

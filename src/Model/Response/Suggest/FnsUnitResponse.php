@@ -1,103 +1,63 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Model\Response\Suggest;
 
 class FnsUnitResponse extends SuggestResponse
 {
-    /**
-     * @var string Код инспекции
-     */
-    public $code;
+    /** Код инспекции */
+    public string $code;
 
-    /**
-     * @var string Полное название
-     */
-    public $name;
+    /** Полное название */
+    public string $name;
 
-    /**
-     * @var string Краткое название
-     */
-    public $nameShort;
+    /** Краткое название */
+    public string $nameShort;
 
-    /**
-     * @var string Адрес
-     */
-    public $address;
+    /** Адрес */
+    public string $address;
 
-    /**
-     * @var string Телефоны
-     */
-    public $phone;
+    /** Телефоны */
+    public string $phone;
 
-    /**
-     * @var string ОКПО и режим работы
-     */
-    public $comment;
+    /** ОКПО и режим работы */
+    public string $comment;
 
-    /**
-     * @var string Получатель платежа
-     */
-    public $paymentName;
+    /** Получатель платежа */
+    public string $paymentName;
 
-    /**
-     * @var string Коды ОКТМО бюджетополучателя
-     */
-    public $oktmo;
+    /** Коды ОКТМО бюджетополучателя */
+    public string $oktmo;
 
-    /**
-     * @var string ИНН получателя
-     */
-    public $inn;
+    /** ИНН получателя */
+    public string $inn;
 
-    /**
-     * @var string КПП получателя
-     */
-    public $kpp;
+    /** КПП получателя */
+    public string $kpp;
 
-    /**
-     * @var string Название банка получателя
-     */
-    public $bankName;
+    /** Название банка получателя */
+    public string $bankName;
 
-    /**
-     * @var string БИК банка получателя
-     */
-    public $bankBik;
+    /** БИК банка получателя */
+    public string $bankBik;
 
-    /**
-     * @var string Корсчет банка получателя
-     */
-    public $bankCorrespondentAccount;
+    /** Корсчет банка получателя */
+    public string $bankCorrespondentAccount;
 
-    /**
-     * @var string Номер счёта получателя
-     */
-    public $bankAccount;
+    /** Номер счёта получателя */
+    public string $bankAccount;
 
-    /**
-     * @var string Код регистрирующей инспекции
-     */
-    public $parentCode;
+    /** Код регистрирующей инспекции */
+    public string $parentCode;
 
-    /**
-     * @var string Полное название регистрирующей инспекции
-     */
-    public $parentName;
+    /** Полное название регистрирующей инспекции */
+    public string $parentName;
 
-    /**
-     * @var string Адрес регистрирующей инспекции
-     */
-    public $parentAddress;
+    /** Адрес регистрирующей инспекции */
+    public string $parentAddress;
 
-    /**
-     * @var string Телефоны регистрирующей инспекции
-     */
-    public $parentPhone;
+    /** Телефоны регистрирующей инспекции */
+    public string $parentPhone;
 
-    /**
-     * @var string Режим работы регистрирующей инспекции
-     */
-    public $parentComment;
+    /** Режим работы регистрирующей инспекции */
+    public string $parentComment;
 }

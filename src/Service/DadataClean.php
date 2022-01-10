@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Service;
 
 use Symfony\Contracts\HttpClient\Exception\ExceptionInterface;
@@ -20,11 +18,9 @@ use Velhron\DadataBundle\Model\Response\Clean\VehicleResponse;
 
 class DadataClean extends AbstractService
 {
-    /**
-     * Обработчик для API стандартизации.
+    /** Обработчик для API стандартизации.
      *
-     * @throws DadataException|InvalidConfigException
-     */
+     * @throws DadataException|InvalidConfigException */
     private function handle(string $method, string $query): AbstractResponse
     {
         /* @var CleanRequest $request */
@@ -36,9 +32,7 @@ class DadataClean extends AbstractService
         return $this->responseFactory->create($method, $responseData);
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    /** {@inheritdoc} */
     protected function query(AbstractRequest $request): array
     {
         try {
@@ -59,8 +53,7 @@ class DadataClean extends AbstractService
         }
     }
 
-    /**
-     * Стандартизация адреса.
+    /** Стандартизация адреса.
      *
      * - Разбивает адрес по отдельным полям (регион, город, улица, дом, квартира) согласно КЛАДР/ФИАС.
      * - Определяет корректный индекс по данным Почты России.
@@ -71,18 +64,13 @@ class DadataClean extends AbstractService
      *
      * @return AddressResponse Стандартизованный объект
      *
-     * @throws DadataException|InvalidConfigException
-     */
+     * @throws DadataException|InvalidConfigException */
     public function cleanAddress(string $query): AddressResponse
     {
-        /** @var AddressResponse $response */
-        $response = $this->handle('cleanAddress', $query);
-
-        return $response;
+        return $this->handle('cleanAddress', $query);
     }
 
-    /**
-     * Стандартизация телефона.
+    /** Стандартизация телефона.
      *
      * Проверяет телефон по справочнику Россвязи.
      * Определяет оператора с учётом переноса номеров, заполняет страну, город и часовой пояс.
@@ -91,18 +79,13 @@ class DadataClean extends AbstractService
      *
      * @return PhoneResponse Стандартизованный объект
      *
-     * @throws DadataException|InvalidConfigException
-     */
+     * @throws DadataException|InvalidConfigException */
     public function cleanPhone(string $query): PhoneResponse
     {
-        /** @var PhoneResponse $response */
-        $response = $this->handle('cleanPhone', $query);
-
-        return $response;
+        return $this->handle('cleanPhone', $query);
     }
 
-    /**
-     * Стандартизация паспорта.
+    /** Стандартизация паспорта.
      *
      * Проверяет паспорт по справочнику недействительных паспортов МВД.
      *
@@ -110,52 +93,37 @@ class DadataClean extends AbstractService
      *
      * @return PassportResponse Стандартизованный объект
      *
-     * @throws DadataException|InvalidConfigException
-     */
+     * @throws DadataException|InvalidConfigException */
     public function cleanPassport(string $query): PassportResponse
     {
-        /** @var PassportResponse $response */
-        $response = $this->handle('cleanPassport', $query);
-
-        return $response;
+        return $this->handle('cleanPassport', $query);
     }
 
-    /**
-     * Стандартизация даты рождения.
+    /** Стандартизация даты рождения.
      *
      * @param string $query Текст запроса
      *
      * @return BirthdateResponse Стандартизованный объект
      *
-     * @throws DadataException|InvalidConfigException
-     */
+     * @throws DadataException|InvalidConfigException */
     public function cleanBirthdate(string $query): BirthdateResponse
     {
-        /** @var BirthdateResponse $response */
-        $response = $this->handle('cleanBirthdate', $query);
-
-        return $response;
+        return $this->handle('cleanBirthdate', $query);
     }
 
-    /**
-     * Стандартизация автомобиля.
+    /** Стандартизация автомобиля.
      *
      * @param string $query Текст запроса
      *
      * @return VehicleResponse Стандартизованный объект
      *
-     * @throws DadataException|InvalidConfigException
-     */
+     * @throws DadataException|InvalidConfigException */
     public function cleanVehicle(string $query): VehicleResponse
     {
-        /** @var VehicleResponse $response */
-        $response = $this->handle('cleanVehicle', $query);
-
-        return $response;
+        return $this->handle('cleanVehicle', $query);
     }
 
-    /**
-     * Стандартизация ФИО.
+    /** Стандартизация ФИО.
      *
      * Разбивает ФИО из строки по отдельным полям (фамилия, имя, отчество). Определяет пол и склоняет по падежам.
      *
@@ -163,18 +131,13 @@ class DadataClean extends AbstractService
      *
      * @return NameResponse Стандартизованный объект
      *
-     * @throws DadataException|InvalidConfigException
-     */
+     * @throws DadataException|InvalidConfigException */
     public function cleanName(string $query): NameResponse
     {
-        /** @var NameResponse $response */
-        $response = $this->handle('cleanName', $query);
-
-        return $response;
+        return $this->handle('cleanName', $query);
     }
 
-    /**
-     * Стандартизация e-mail.
+    /** Стандартизация e-mail.
      *
      * Исправляет опечатки и проверяет на одноразовый адрес.
      * Классифицирует адреса на личные, корпоративные и «ролевые».
@@ -183,13 +146,9 @@ class DadataClean extends AbstractService
      *
      * @return EmailResponse Стандартизованный объект
      *
-     * @throws DadataException|InvalidConfigException
-     */
+     * @throws DadataException|InvalidConfigException */
     public function cleanEmail(string $query): EmailResponse
     {
-        /** @var EmailResponse $response */
-        $response = $this->handle('cleanEmail', $query);
-
-        return $response;
+        return $this->handle('cleanEmail', $query);
     }
 }

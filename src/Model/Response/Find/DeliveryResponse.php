@@ -1,35 +1,23 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Model\Response\Find;
 
 use Velhron\DadataBundle\Model\Response\Suggest\SuggestResponse;
 
 class DeliveryResponse extends SuggestResponse
 {
-    /**
-     * @var string КЛАДР-код города
-     */
-    public $kladrId;
+    /** КЛАДР-код города */
+    public string $kladrId;
 
-    /**
-     * @var string ФИАС-код города
-     */
-    public $fiasId;
+    /** ФИАС-код города */
+    public string $fiasId;
 
-    /**
-     * @var string Идентификатор города по справочнику Boxberry
-     */
-    public $boxberryId;
+    /** Идентификатор города по справочнику Boxberry */
+    public string $boxberryId;
 
-    /**
-     * @var string Идентификатор города по справочнику СДЭК
-     */
-    public $cdekId;
+    /** Идентификатор города по справочнику СДЭК */
+    public string $cdekId;
 
-    /**
-     * @var string Идентификатор города по справочнику DPD
-     */
-    public $dpdId;
+    /** Идентификатор города по справочнику DPD */
+    public string $dpdId;
 }

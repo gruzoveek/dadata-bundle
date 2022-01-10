@@ -1,22 +1,16 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Model\Response\Suggest;
 
 use Velhron\DadataBundle\Model\Response\AbstractResponse;
 
 abstract class SuggestResponse extends AbstractResponse
 {
-    /**
-     * @var string Значение одной строкой (как показывается в списке подсказок)
-     */
-    public $value;
+    /** Значение одной строкой (как показывается в списке подсказок) */
+    public mixed $value;
 
-    /**
-     * @var string Значение
-     */
-    public $unrestrictedValue;
+    /** Значение */
+    public mixed $unrestrictedValue;
 
     public function __construct(array $data)
     {

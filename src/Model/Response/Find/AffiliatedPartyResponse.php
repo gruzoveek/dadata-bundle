@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Model\Response\Find;
 
 use Velhron\DadataBundle\Model\Response\Suggest\AddressResponse;
@@ -9,85 +7,53 @@ use Velhron\DadataBundle\Model\Response\Suggest\SuggestResponse;
 
 class AffiliatedPartyResponse extends SuggestResponse
 {
-    /**
-     * @var string ИНН
-     */
-    public $inn;
+    /** ИНН */
+    public string $inn;
 
-    /**
-     * @var string КПП
-     */
-    public $kpp;
+    /** КПП */
+    public string $kpp;
 
-    /**
-     * @var string ОГРН
-     */
-    public $ogrn;
+    /** ОГРН */
+    public string $ogrn;
 
-    /**
-     * @var string Уникальный идентификатор в Дадате
-     */
-    public $hid;
+    /** Уникальный идентификатор в Дадате */
+    public string $hid;
 
-    /**
-     * @var string Тип организации (LEGAL — юридическое лицо, INDIVIDUAL — индивидуальный предприниматель)
-     */
-    public $type;
+    /** Тип организации (LEGAL — юридическое лицо, INDIVIDUAL — индивидуальный предприниматель) */
+    public string $type;
 
-    /**
-     * @var string Код ОКАТО
-     */
-    public $okato;
+    /** Код ОКАТО */
+    public string $okato;
 
-    /**
-     * @var string Код ОКТМО
-     */
-    public $oktmo;
+    /** Код ОКТМО */
+    public string $oktmo;
 
-    /**
-     * @var string Код ОКПО
-     */
-    public $okpo;
+    /** Код ОКПО */
+    public string $okpo;
 
-    /**
-     * @var string Код ОКОГУ
-     */
-    public $okogu;
+    /** Код ОКОГУ */
+    public string $okogu;
 
-    /**
-     * @var string Код ОКФС
-     */
-    public $okfs;
+    /** Код ОКФС */
+    public string $okfs;
 
-    /**
-     * @var string Код ОКВЭД
-     */
-    public $okved;
+    /** Код ОКВЭД */
+    public string $okved;
 
-    /**
-     * @var string Версия справочника ОКВЭД (2001 или 2014)
-     */
-    public $okvedType;
+    /** Версия справочника ОКВЭД (2001 или 2014) */
+    public string $okvedType;
 
-    /**
-     * @var string Количество филиалов
-     */
-    public $branchCount;
+    /** Количество филиалов */
+    public string $branchCount;
 
-    /**
-     * @var string Тип подразделения (MAIN — головная организация, BRANCH — филиал)
-     */
-    public $branchType;
+    /** Тип подразделения (MAIN — головная организация, BRANCH — филиал) */
+    public string $branchType;
 
-    /**
-     * @var AddressResponse Адрес одной строкой
-     */
-    public $address;
+    /** Адрес одной строкой */
+    public AddressResponse $address;
 
-    /**
-     * @var array Состояние
-     */
-    public $state;
+    /** Состояние */
+    public array $state;
 
     public function __construct(array $data)
     {

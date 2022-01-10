@@ -1,18 +1,12 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Model\Response\Clean;
 
 class PassportResponse extends CleanResponse
 {
-    /**
-     * @var string Серия
-     */
-    public $series;
+    /** Серия */
+    public string $series;
 
-    /**
-     * @var string Номер
-     */
-    public $number;
+    /** Номер */
+    public string $number;
 }

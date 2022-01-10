@@ -1,23 +1,17 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle;
 
 use Velhron\DadataBundle\Exception\InvalidConfigException;
 
 class Resolver
 {
-    /**
-     * @var array
-     */
-    private $methodsByName;
+    /** */
+    private array $methodsByName;
 
-    /**
-     * Resolver constructor.
+    /** Resolver constructor.
      *
-     * @throws InvalidConfigException
-     */
+     * @throws InvalidConfigException */
     public function __construct(array $methods)
     {
         foreach ($methods as $method) {
@@ -37,21 +31,21 @@ class Resolver
     {
         $method = $this->resolve($methodName);
 
-        return isset($method, $method['request']) ? $method['request'] : null;
+        return $method['request'] ?? null;
     }
 
     public function getMatchedResponse(string $methodName): ?string
     {
         $method = $this->resolve($methodName);
 
-        return isset($method, $method['response']) ? $method['response'] : null;
+        return $method['response'] ?? null;
     }
 
     public function getMatchedUrl(string $methodName): ?string
     {
         $method = $this->resolve($methodName);
 
-        return isset($method, $method['url']) ? $method['url'] : null;
+        return $method['url'] ?? null;
     }
 
     public function resolve(string $methodName): ?array

@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Service;
 
 use Symfony\Contracts\HttpClient\Exception\ExceptionInterface;
@@ -14,11 +12,9 @@ use Velhron\DadataBundle\Model\Response\Suggest\PostalUnitResponse;
 
 class DadataGeolocate extends AbstractService
 {
-    /**
-     * Обработчик для API обратного геокодирования (по координатам).
+    /** Обработчик для API обратного геокодирования (по координатам).
      *
-     * @throws DadataException|InvalidConfigException
-     */
+     * @throws DadataException|InvalidConfigException */
     private function handle(string $method, float $latitude, float $longitude, array $options = []): array
     {
         /* @var GeolocateRequest $request */
@@ -37,9 +33,7 @@ class DadataGeolocate extends AbstractService
         return $data ?? [];
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    /** {@inheritdoc} */
     protected function query(AbstractRequest $request): array
     {
         try {
@@ -58,8 +52,7 @@ class DadataGeolocate extends AbstractService
         }
     }
 
-    /**
-     * Адрес по координатам.
+    /** Адрес по координатам.
      *
      * Находит ближайшие адреса (дома, улицы, города) по географическим координатам. Только для России.
      *
@@ -69,15 +62,13 @@ class DadataGeolocate extends AbstractService
      *
      * @return AddressResponse[]
      *
-     * @throws DadataException|InvalidConfigException
-     */
+     * @throws DadataException|InvalidConfigException */
     public function geolocateAddress(float $latitude, float $longitude, array $options = []): array
     {
         return $this->handle('geolocateAddress', $latitude, $longitude, $options);
     }
 
-    /**
-     * Почтовое отделение по координатам.
+    /** Почтовое отделение по координатам.
      *
      * @param float $latitude  - широта
      * @param float $longitude - долгота
@@ -85,8 +76,7 @@ class DadataGeolocate extends AbstractService
      *
      * @return PostalUnitResponse[]
      *
-     * @throws DadataException|InvalidConfigException
-     */
+     * @throws DadataException|InvalidConfigException */
     public function geolocatePostalUnit(float $latitude, float $longitude, array $options = []): array
     {
         return $this->handle('geolocatePostalUnit', $latitude, $longitude, $options);

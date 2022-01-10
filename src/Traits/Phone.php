@@ -1,58 +1,36 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Traits;
 
 trait Phone
 {
-    /**
-     * @var string телефон одной строкой как в ЕГРЮЛ
-     */
-    public $source;
+    /** телефон одной строкой как в ЕГРЮЛ */
+    public string $source;
 
-    /**
-     * @var string тип телефона (мобильный, стационарный, ...)
-     */
-    public $type;
+    /** тип телефона (мобильный, стационарный, ...) */
+    public string $type;
 
-    /**
-     * @var string код страны
-     */
-    public $countryCode;
+    /** код страны */
+    public string $countryCode;
 
-    /**
-     * @var string код города / DEF-код
-     */
-    public $cityCode;
+    /** код города / DEF-код */
+    public string $cityCode;
 
-    /**
-     * @var string локальный номер телефона
-     */
-    public $number;
+    /** локальный номер телефона */
+    public string $number;
 
-    /**
-     * @var string оператор связи
-     */
-    public $provider;
+    /** оператор связи */
+    public string $provider;
 
-    /**
-     * @var string регион
-     */
-    public $region;
+    /** регион */
+    public string $region;
 
-    /**
-     * @var string город (только для стационарных телефонов)
-     */
-    public $city;
+    /** город (только для стационарных телефонов) */
+    public string $city;
 
-    /**
-     * @var string часовой пояс
-     */
-    public $timezone;
+    /** часовой пояс */
+    public string $timezone;
 
-    /**
-     * @var string контактное лицо
-     */
-    public $contact;
+    /** контактное лицо */
+    public string $contact;
 }

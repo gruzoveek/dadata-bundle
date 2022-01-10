@@ -1,40 +1,28 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Model\Response\Suggest;
 
 class FioResponse extends SuggestResponse
 {
-    /**
-     * @var string Фамилия
-     */
-    public $surname;
+    /** Фамилия */
+    public string $surname;
 
-    /**
-     * @var string Имя
-     */
-    public $name;
+    /** Имя */
+    public string $name;
 
-    /**
-     * @var string Отчество
-     */
-    public $patronymic;
+    /** Отчество */
+    public string $patronymic;
 
-    /**
-     * @var string Пол
+    /** Пол
      *
      * MALE    — мужской
      * FEMALE  — женский
-     * UNKNOWN — не удалось однозначно определить
-     */
-    public $gender;
+     * UNKNOWN — не удалось однозначно определить */
+    public string $gender;
 
-    /**
-     * @var string Код проверки
+    /** Код проверки
      *
      * 0 — все части ФИО известны
-     * 1 — в ФИО есть неизвестная часть
-     */
-    public $qc;
+     * 1 — в ФИО есть неизвестная часть */
+    public string $qc;
 }

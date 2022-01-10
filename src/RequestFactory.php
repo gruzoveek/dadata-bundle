@@ -1,7 +1,4 @@
 <?php
-
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle;
 
 use Velhron\DadataBundle\Exception\InvalidConfigException;
@@ -9,19 +6,14 @@ use Velhron\DadataBundle\Model\Request\AbstractRequest;
 
 class RequestFactory
 {
-    /**
-     * @var Resolver
-     */
-    protected $resolver;
+    protected Resolver $resolver;
 
     public function __construct(Resolver $resolver)
     {
         $this->resolver = $resolver;
     }
 
-    /**
-     * @throws InvalidConfigException
-     */
+    /** @throws InvalidConfigException */
     public function create(string $methodName): AbstractRequest
     {
         $requestClass = $this->resolver->getMatchedRequest($methodName);

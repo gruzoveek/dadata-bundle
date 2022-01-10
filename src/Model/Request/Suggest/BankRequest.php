@@ -1,18 +1,13 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Model\Request\Suggest;
 
 class BankRequest extends SuggestRequest
 {
-    /**
-     * @var array Ограничение по статусу банка
-     */
-    protected $status;
+    /** Ограничение по статусу банка */
+    protected array $status;
 
-    /**
-     * @var array Ограничение по типу банка
+    /** Ограничение по типу банка
      *
      * Доступные типы:
      * BANK        - Банк
@@ -20,17 +15,12 @@ class BankRequest extends SuggestRequest
      * BANK_BRANCH - Филиал банка
      * NKO_BRANCH  - Филиал небанковской кредитной организации
      * RKC         - РКЦ / ГРКЦ
-     * OTHER       - Другое
-     */
-    protected $type;
+     * OTHER       - Другое */
+    protected array $type;
 
-    /**
-     * @var array Ограничение по региону или городу
-     */
-    protected $locations;
+    /** Ограничение по региону или городу */
+    protected array $locations;
 
-    /**
-     * @var array Приоритет города при ранжировании
-     */
-    protected $locations_boost;
+    /** Приоритет города при ранжировании */
+    protected array $locations_boost;
 }

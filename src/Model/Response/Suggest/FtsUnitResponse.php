@@ -1,63 +1,39 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Model\Response\Suggest;
 
 class FtsUnitResponse extends SuggestResponse
 {
-    /**
-     * @var string Код таможни
-     */
-    public $code;
+    /** Код таможни */
+    public string $code;
 
-    /**
-     * @var string Полное название
-     */
-    public $name;
+    /** Полное название */
+    public string $name;
 
-    /**
-     * @var string Краткое название
-     */
-    public $nameShort;
+    /** Краткое название */
+    public string $nameShort;
 
-    /**
-     * @var string ИНН
-     */
-    public $inn;
+    /** ИНН */
+    public string $inn;
 
-    /**
-     * @var string ОГРН
-     */
-    public $ogrn;
+    /** ОГРН */
+    public string $ogrn;
 
-    /**
-     * @var string Код ОКПО
-     */
-    public $okpo;
+    /** Код ОКПО */
+    public string $okpo;
 
-    /**
-     * @var string Код организационно-структурной формы
-     */
-    public $osf;
+    /** Код организационно-структурной формы */
+    public string $osf;
 
-    /**
-     * @var string Адрес
-     */
-    public $address;
+    /** Адрес */
+    public string $address;
 
-    /**
-     * @var string Телефон
-     */
-    public $phone;
+    /** Телефон */
+    public string $phone;
 
-    /**
-     * @var string Факс
-     */
-    public $fax;
+    /** Факс */
+    public string $fax;
 
-    /**
-     * @var string Адрес эл. почты
-     */
-    public $email;
+    /** Адрес эл. почты */
+    public string $email;
 }

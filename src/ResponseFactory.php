@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle;
 
 use Velhron\DadataBundle\Exception\InvalidConfigException;
@@ -9,19 +7,14 @@ use Velhron\DadataBundle\Model\Response\AbstractResponse;
 
 class ResponseFactory
 {
-    /**
-     * @var Resolver
-     */
-    protected $resolver;
+    protected Resolver $resolver;
 
     public function __construct(Resolver $resolver)
     {
         $this->resolver = $resolver;
     }
 
-    /**
-     * @throws InvalidConfigException
-     */
+    /** @throws InvalidConfigException */
     public function create(string $methodName, array $data): AbstractResponse
     {
         $responseClass = $this->resolver->getMatchedResponse($methodName);

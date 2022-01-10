@@ -1,30 +1,20 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Model\Response\General;
 
 class StatResponse
 {
-    /**
-     * @var string Дата
-     */
-    public $date;
+    /** Дата */
+    public mixed $date;
 
-    /**
-     * @var int Статистика использования сервиса поиска дублей
-     */
-    public $merging;
+    /** Статистика использования сервиса поиска дублей */
+    public mixed $merging;
 
-    /**
-     * @var int Статистика использования сервиса подсказок
-     */
-    public $suggestions;
+    /** Статистика использования сервиса подсказок */
+    public mixed $suggestions;
 
-    /**
-     * @var int Статистика использования сервиса стандартизации
-     */
-    public $clean;
+    /** Статистика использования сервиса стандартизации */
+    public mixed $clean;
 
     public function __construct(array $data)
     {

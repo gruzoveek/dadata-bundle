@@ -1,9 +1,8 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Tests;
 
+use JetBrains\PhpStorm\Pure;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\HttpKernel\Kernel;
 use Velhron\DadataBundle\VelhronDadataBundle;
@@ -13,7 +12,8 @@ class TestingKernel extends Kernel
     /**
      * {@inheritdoc}
      */
-    public function registerBundles()
+    #[Pure]
+    public function registerBundles(): array
     {
         return [
             new VelhronDadataBundle(),

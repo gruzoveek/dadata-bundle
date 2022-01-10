@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Service;
 
 use Symfony\Contracts\HttpClient\Exception\ExceptionInterface;
@@ -13,9 +11,7 @@ use Velhron\DadataBundle\Model\Response\General\StatResponse;
 
 class DadataGeneral extends AbstractService
 {
-    /**
-     * {@inheritdoc}
-     */
+    /** {@inheritdoc} */
     protected function query(AbstractRequest $request): array
     {
         try {
@@ -33,15 +29,13 @@ class DadataGeneral extends AbstractService
         }
     }
 
-    /**
-     * Возвращает текущий баланс счета.
+    /** Возвращает текущий баланс счета.
      *
      * Возвращает сумму в рублях с точностью до копеек, десятичный разделитель — точка.
      *
      * @return float Текущий баланс счета
      *
-     * @throws DadataException|InvalidConfigException
-     */
+     * @throws DadataException|InvalidConfigException */
     public function balance(): float
     {
         $responseData = $this->query($this->requestFactory->create('balance'));
@@ -49,8 +43,7 @@ class DadataGeneral extends AbstractService
         return $responseData['balance'] ?? 0.0;
     }
 
-    /**
-     * Возвращает агрегированную статистику за конкретный день по каждому из сервисов: стандартизация, подсказки, поиск дублей.
+    /** Возвращает агрегированную статистику за конкретный день по каждому из сервисов: стандартизация, подсказки, поиск дублей.
      *
      * Дата должна быть задана в формате YYYY-MM-DD. По умолчанию, сегодня.
      *
@@ -58,8 +51,7 @@ class DadataGeneral extends AbstractService
      *
      * @return StatResponse Статистика
      *
-     * @throws DadataException|InvalidConfigException
-     */
+     * @throws DadataException|InvalidConfigException */
     public function stat(string $date = null): StatResponse
     {
         /** @var StatRequest $request */
@@ -70,13 +62,11 @@ class DadataGeneral extends AbstractService
         return new StatResponse($responseData);
     }
 
-    /**
-     * Возвращает даты актуальности справочников (ФИАС, ЕГРЮЛ, банки и другие).
+    /** Возвращает даты актуальности справочников (ФИАС, ЕГРЮЛ, банки и другие).
      *
      * @return array Информация по датам актуальности справочников
      *
-     * @throws DadataException|InvalidConfigException
-     */
+     * @throws DadataException|InvalidConfigException */
     public function version(): array
     {
         return $this->query($this->requestFactory->create('version'));

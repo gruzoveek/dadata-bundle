@@ -1,38 +1,24 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Model\Request\Suggest;
 
 class AddressRequest extends SuggestRequest
 {
-    /**
-     * @var string На каком языке вернуть результат (ru / en)
-     */
-    protected $language;
+    /** На каком языке вернуть результат (ru / en) */
+    protected string $language;
 
-    /**
-     * @var array Ограничение области поиска
-     */
-    protected $locations;
+    /** Ограничение области поиска */
+    protected array $locations;
 
-    /**
-     * @var array Ограничение по радиусу окружности
-     */
-    protected $locations_geo;
+    /** Ограничение по радиусу окружности */
+    protected array $locations_geo;
 
-    /**
-     * @var array Приоритет города при ранжировании
-     */
-    protected $locations_boost;
+    /** Приоритет города при ранжировании */
+    protected array $locations_boost;
 
-    /**
-     * @var array Гранулярные подсказки по адресу
-     */
-    protected $from_bound;
+    /** Гранулярные подсказки по адресу */
+    protected array $from_bound;
 
-    /**
-     * @var array Гранулярные подсказки по адресу
-     */
-    protected $to_bound;
+    /** Гранулярные подсказки по адресу */
+    protected array $to_bound;
 }

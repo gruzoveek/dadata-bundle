@@ -1,18 +1,12 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Model\Response\Clean;
 
 class VehicleResponse extends CleanResponse
 {
-    /**
-     * @var string Марка
-     */
-    public $brand;
+    /** Марка */
+    public string $brand;
 
-    /**
-     * @var string Модель
-     */
-    public $model;
+    /** Модель */
+    public string $model;
 }

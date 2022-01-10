@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Service;
 
 use Symfony\Contracts\HttpClient\HttpClientInterface;
@@ -12,30 +10,17 @@ use Velhron\DadataBundle\ResponseFactory;
 
 abstract class AbstractService
 {
-    /**
-     * @var string API-ключ
-     */
-    protected $token;
+    /** API-ключ */
+    protected string $token;
 
-    /**
-     * @var string Секретный ключ для стандартизации
-     */
-    protected $secret;
+    /** Секретный ключ для стандартизации */
+    protected string $secret;
 
-    /**
-     * @var HttpClientInterface HTTP-клиент
-     */
-    protected $httpClient;
+    protected HttpClientInterface $httpClient;
 
-    /**
-     * @var RequestFactory
-     */
-    protected $requestFactory;
+    protected RequestFactory $requestFactory;
 
-    /**
-     * @var ResponseFactory
-     */
-    protected $responseFactory;
+    protected ResponseFactory $responseFactory;
 
     public function __construct(
         string $token,
@@ -51,8 +36,6 @@ abstract class AbstractService
         $this->responseFactory = $responseFactory;
     }
 
-    /**
-     * @throws DadataException
-     */
+    /** @throws DadataException */
     abstract protected function query(AbstractRequest $request): array;
 }

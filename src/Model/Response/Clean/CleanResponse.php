@@ -1,27 +1,19 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Model\Response\Clean;
 
 use Velhron\DadataBundle\Model\Response\AbstractResponse;
 
 abstract class CleanResponse extends AbstractResponse
 {
-    /**
-     * @var string Исходное значение
-     */
-    public $source;
+    /** Исходное значение */
+    public string $source;
 
-    /**
-     * @var string Стандартизированное значение
-     */
-    public $result;
+    /** Стандартизированное значение */
+    public string $result;
 
-    /**
-     * @var int Код проверки (указывает на то, необходимо ли вручную проверить полученный результат)
-     */
-    public $qc;
+    /** Код проверки (указывает на то, необходимо ли вручную проверить полученный результат) */
+    public int $qc;
 
     public function __construct(array $data)
     {

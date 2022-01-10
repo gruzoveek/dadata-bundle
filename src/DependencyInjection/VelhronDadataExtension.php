@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\DependencyInjection;
 
 use Symfony\Component\Config\FileLocator;
@@ -11,9 +9,7 @@ use Symfony\Component\HttpKernel\DependencyInjection\Extension;
 
 class VelhronDadataExtension extends Extension
 {
-    /**
-     * {@inheritdoc}
-     */
+    /** {@inheritdoc} */
     public function load(array $configs, ContainerBuilder $container): void
     {
         $configuration = new Configuration();

@@ -1,74 +1,48 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Model\Response\Clean;
 
 class PhoneResponse extends CleanResponse
 {
-    /**
-     * @var string Тип телефона
-     */
-    public $type;
+    /** Тип телефона */
+    public string $type;
 
-    /**
-     * @var string Стандартизованный телефон одной строкой
-     */
-    public $phone;
+    /** Стандартизованный телефон одной строкой */
+    public string $phone;
 
-    /**
-     * @var string Код страны
-     */
-    public $countryCode;
+    /** Код страны */
+    public string $countryCode;
 
-    /**
-     * @var string Код города / DEF-код
-     */
-    public $cityCode;
+    /** Код города / DEF-код */
+    public string $cityCode;
 
-    /**
-     * @var string Локальный номер телефона
-     */
-    public $number;
+    /** Локальный номер телефона */
+    public string $number;
 
-    /**
-     * @var string Добавочный номер
-     */
-    public $extension;
+    /** Добавочный номер */
+    public string $extension;
 
-    /**
-     * @var string Оператор связи (только для России)
-     */
-    public $provider;
+    /** Оператор связи (только для России) */
+    public string $provider;
 
-    /**
-     * @var string Страна
-     */
-    public $country;
+    /** Страна */
+    public string $country;
 
-    /**
-     * @var string Регион (только для России)
-     */
-    public $region;
+    /** Регион (только для России) */
+    public string $region;
 
-    /**
-     * @var string Город (только для стационарных телефонов)
-     */
-    public $city;
+    /** Город (только для стационарных телефонов) */
+    public string $city;
 
-    /**
-     * @var string часовой пояс города для России, часовой пояс страны — для иностранных телефонов
+    /** часовой пояс города для России, часовой пояс страны — для иностранных телефонов
      *
-     * Если у страны несколько поясов, вернёт минимальный и максимальный через слеш: UTC+5/UTC+6
-     */
-    public $timezone;
+     * Если у страны несколько поясов, вернёт минимальный и максимальный через слеш: UTC+5/UTC+6 */
+    public string $timezone;
 
-    /**
-     * @var int Признак конфликта телефона с адресом
+    /** Признак конфликта телефона с адресом
      *
      * 0 - Телефон соответствует адресу
      * 2 - Города адреса и телефона отличаются
-     * 3 - Регионы адреса и телефона отличаются
-     */
-    public $qcConflict;
+     * 3 - Регионы адреса и телефона отличаются */
+    public int $qcConflict;
 }

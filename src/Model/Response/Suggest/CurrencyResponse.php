@@ -1,28 +1,18 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Model\Response\Suggest;
 
 class CurrencyResponse extends SuggestResponse
 {
-    /**
-     * @var string Цифровой код валюты
-     */
-    public $code;
+    /** Цифровой код валюты */
+    public string $code;
 
-    /**
-     * @var string Буквенный код валюты
-     */
-    public $strcode;
+    /** Буквенный код валюты */
+    public string $strcode;
 
-    /**
-     * @var string Наименование валюты
-     */
-    public $name;
+    /** Наименование валюты */
+    public string $name;
 
-    /**
-     * @var string Страна, в которой эта валюта является ее денежной единицей
-     */
-    public $country;
+    /** Страна, в которой эта валюта является ее денежной единицей */
+    public string $country;
 }

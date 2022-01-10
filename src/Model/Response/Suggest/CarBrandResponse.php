@@ -1,23 +1,15 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Model\Response\Suggest;
 
 class CarBrandResponse extends SuggestResponse
 {
-    /**
-     * @var string Идентификатор марки
-     */
-    public $id;
+    /** Идентификатор марки */
+    public string $id;
 
-    /**
-     * @var string Наименование марки
-     */
-    public $name;
+    /** Наименование марки */
+    public string $name;
 
-    /**
-     * @var string Наименование марки на русском
-     */
-    public $nameRu;
+    /** Наименование марки на русском */
+    public string $nameRu;
 }

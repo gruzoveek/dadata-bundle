@@ -1,48 +1,32 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Model\Response\Suggest;
 
 class OktmoResponse extends SuggestResponse
 {
-    /**
-     * @var string Код ОКТМО
-     */
-    public $oktmo;
+    /** Код ОКТМО */
+    public string $oktmo;
 
-    /**
-     * @var string Тип муниципального района
-     */
-    public $areaType;
+    /** Тип муниципального района */
+    public string $areaType;
 
-    /**
-     * @var string Код муниципального района
-     */
-    public $areaCode;
+    /** Код муниципального района */
+    public string $areaCode;
 
-    /**
-     * @var string Название муниципального района
-     */
-    public $area;
+    /** Название муниципального района */
+    public string $area;
 
-    /**
-     * @var string Тип муниципального поселения
+    /** Тип муниципального поселения
      *
      * 1 — городское поселение
      * 2 — сельское поселение
      * 3 — межселенная территория в составе муниципального района
-     * 4 — внутригородской район городского округа
-     */
-    public $subareaType;
+     * 4 — внутригородской район городского округа */
+    public string $subareaType;
 
-    /**
-     * @var string Код муниципального поселения
-     */
-    public $subareaCode;
+    /** Код муниципального поселения */
+    public string $subareaCode;
 
-    /**
-     * @var string Название муниципального поселения
-     */
-    public $subarea;
+    /** Название муниципального поселения */
+    public string $subarea;
 }

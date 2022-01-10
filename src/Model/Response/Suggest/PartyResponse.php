@@ -1,180 +1,110 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Model\Response\Suggest;
 
 class PartyResponse extends SuggestResponse
 {
-    /**
-     * @var string ИНН
-     */
-    public $inn;
+    /** ИНН */
+    public string $inn;
 
-    /**
-     * @var string КПП
-     */
-    public $kpp;
+    /** КПП */
+    public string $kpp;
 
-    /**
-     * @var string ОГРН
-     */
-    public $ogrn;
+    /** ОГРН */
+    public string $ogrn;
 
-    /**
-     * @var string Дата выдачи ОГРН
-     */
-    public $ogrnDate;
+    /** Дата выдачи ОГРН */
+    public string $ogrnDate;
 
-    /**
-     * @var string Уникальный идентификатор в Дадате
-     */
-    public $hid;
+    /** Уникальный идентификатор в Дадате */
+    public string $hid;
 
-    /**
-     * @var string Тип организации
-     */
-    public $type;
+    /** Тип организации */
+    public string $type;
 
-    /**
-     * @var array Наименование
-     */
-    public $name;
+    /** Наименование */
+    public array $name;
 
-    /**
-     * @var string Код ОКАТО
-     */
-    public $okato;
+    /** Код ОКАТО */
+    public string $okato;
 
-    /**
-     * @var string Код ОКТМО
-     */
-    public $oktmo;
+    /** Код ОКТМО */
+    public string $oktmo;
 
-    /**
-     * @var string Код ОКПО
-     */
-    public $okpo;
+    /** Код ОКПО */
+    public string $okpo;
 
-    /**
-     * @var string Код ОКОГУ
-     */
-    public $okogu;
+    /** Код ОКОГУ */
+    public string $okogu;
 
-    /**
-     * @var string Код ОКФС
-     */
-    public $okfs;
+    /** Код ОКФС */
+    public string $okfs;
 
-    /**
-     * @var string Код ОКВЭД
-     */
-    public $okved;
+    /** Код ОКВЭД */
+    public string $okved;
 
-    /**
-     * @var string Версия справочника ОКВЭД (2001 или 2014)
-     */
-    public $okvedType;
+    /** Версия справочника ОКВЭД (2001 или 2014) */
+    public string $okvedType;
 
-    /**
-     * @var array Организационно-правовая форма
-     */
-    public $opf;
+    /** Организационно-правовая форма */
+    public array $opf;
 
-    /**
-     * @var array Руководитель
-     */
-    public $management;
+    /** Руководитель */
+    public array $management;
 
-    /**
-     * @var string Количество филиалов
-     */
-    public $branchCount;
+    /** Количество филиалов */
+    public string $branchCount;
 
-    /**
-     * @var string Тип подразделения
-     */
-    public $branchType;
+    /** Тип подразделения */
+    public string $branchType;
 
-    /**
-     * @var AddressResponse Адрес
-     */
-    public $address;
+    /** Адрес */
+    public AddressResponse $address;
 
-    /**
-     * @var string Состояние
-     */
-    public $state;
+    /** Состояние */
+    public string $state;
 
-    /**
-     * @var string Среднесписочная численность работников
-     */
-    public $employeeCount;
+    /** Среднесписочная численность работников */
+    public string $employeeCount;
 
-    /**
-     * @var array Коды ОКВЭД дополнительных видов деятельности
-     */
-    public $okveds;
+    /** Коды ОКВЭД дополнительных видов деятельности */
+    public array $okveds;
 
-    /**
-     * @var string Сведения о налоговой, ПФР и ФСС
-     */
-    public $authorities;
+    /** Сведения о налоговой, ПФР и ФСС */
+    public string $authorities;
 
-    /**
-     * @var string Гражданство ИП
-     */
-    public $citizenship;
+    /** Гражданство ИП */
+    public string $citizenship;
 
-    /**
-     * @var array Учредители компании
-     */
-    public $founders;
+    /** Учредители компании */
+    public array $founders;
 
-    /**
-     * @var array Руководители компании
-     */
-    public $managers;
+    /** Руководители компании */
+    public array $managers;
 
-    /**
-     * @var array Правопредшественники (только для юр. лиц)
-     */
-    public $predecessors;
+    /** Правопредшественники (только для юр. лиц) */
+    public array $predecessors;
 
-    /**
-     * @var array Правопреемники (только для юр. лиц)
-     */
-    public $successors;
+    /** Правопреемники (только для юр. лиц) */
+    public array $successors;
 
-    /**
-     * @var string Уставной капитал компании
-     */
-    public $capital;
+    /** Уставной капитал компании */
+    public string $capital;
 
-    /**
-     * @var string Налоговый режим, доходы, расходы, долги и штрафы
-     */
-    public $finance;
+    /** Налоговый режим, доходы, расходы, долги и штрафы */
+    public string $finance;
 
-    /**
-     * @var string Документы и реестры
-     */
-    public $documents;
+    /** Документы и реестры */
+    public string $documents;
 
-    /**
-     * @var array Лицензии
-     */
-    public $licenses;
+    /** Лицензии */
+    public array $licenses;
 
-    /**
-     * @var EmailResponse[] Адреса эл. почты
-     */
-    public $emails;
+    /** Адреса эл. почты */
+    public array $emails;
 
-    /**
-     * @var PhoneResponse[] Телефоны
-     */
-    public $phones;
+    /** Телефоны */
+    public array $phones;
 
     public function __construct(array $data)
     {
@@ -185,14 +115,14 @@ class PartyResponse extends SuggestResponse
         }
 
         if (isset($data['data']['emails']) && is_array($data['data']['emails'])) {
-            foreach ($data['data']['emails'] as $data) {
-                $this->emails[] = new EmailResponse($data);
+            foreach ($data['data']['emails'] as $email) {
+                $this->emails[] = new EmailResponse($email);
             }
         }
 
         if (isset($data['data']['phones']) && is_array($data['data']['phones'])) {
-            foreach ($data['data']['phones'] as $data) {
-                $this->phones[] = new PhoneResponse($data);
+            foreach ($data['data']['phones'] as $phone) {
+                $this->phones[] = new PhoneResponse($phone);
             }
         }
     }

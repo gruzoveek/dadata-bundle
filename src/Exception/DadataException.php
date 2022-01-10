@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Exception;
 
 use Exception;
@@ -11,29 +9,15 @@ class DadataException extends Exception
 {
     public function __construct(ExceptionInterface $exception)
     {
-        switch ($exception->getCode()) {
-            case 400:
-                $message = 'Некорректный запрос (невалидный JSON или XML)';
-                break;
-            case 401:
-                $message = 'В запросе отсутствует API-ключ';
-                break;
-            case 403:
-                $message = 'В запросе указан несуществующий API-ключ. Или не подтверждена почта. Или исчерпан дневной лимит по количеству запросов';
-                break;
-            case 405:
-                $message = 'Неправильный метод запроса';
-                break;
-            case 413:
-                $message = 'Слишком большая длина запроса или слишком много условий';
-                break;
-            case 429:
-                $message = 'Слишком много запросов в секунду или новых соединений в минуту';
-                break;
-            default:
-                $message = 'Произошла внутренняя ошибка сервиса';
-                break;
-        }
+        $message = match ($exception->getCode()) {
+            400 => 'Некорректный запрос (невалидный JSON или XML)',
+            401 => 'В запросе отсутствует API-ключ',
+            403 => 'В запросе указан несуществующий API-ключ. Или не подтверждена почта. Или исчерпан дневной лимит по количеству запросов',
+            405 => 'Неправильный метод запроса',
+            413 => 'Слишком большая длина запроса или слишком много условий',
+            429 => 'Слишком много запросов в секунду или новых соединений в минуту',
+            default => 'Произошла внутренняя ошибка сервиса',
+        };
 
         parent::__construct($message, $exception->getCode(), $exception);
     }

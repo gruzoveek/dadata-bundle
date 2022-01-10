@@ -1,25 +1,17 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Model\Request\Geolocate;
 
 use Velhron\DadataBundle\Model\Request\Suggest\SuggestRequest;
 
 abstract class GeolocateRequest extends SuggestRequest
 {
-    /**
-     * @var float Географическая широта
-     */
-    protected $lat;
+    /** Географическая широта */
+    protected float $lat;
 
-    /**
-     * @var float Географическая долгота
-     */
-    protected $lon;
+    /** Географическая долгота */
+    protected float $lon;
 
-    /**
-     * @var int Радиус поиска в метрах
-     */
-    protected $radius_meters;
+    /** Радиус поиска в метрах */
+    protected int $radius_meters;
 }

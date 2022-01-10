@@ -1,65 +1,41 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Model\Response\Suggest;
 
 class BankResponse extends SuggestResponse
 {
-    /**
-     * @var string Банковский идентификационный код (БИК) ЦБ РФ
-     */
-    public $bic;
+    /** Банковский идентификационный код (БИК) ЦБ РФ */
+    public string $bic;
 
-    /**
-     * @var string Банковский идентификационный код в системе SWIFT
-     */
-    public $swift;
+    /** Банковский идентификационный код в системе SWIFT */
+    public string $swift;
 
-    /**
-     * @var string ИНН
-     */
-    public $inn;
+    /** ИНН */
+    public string $inn;
 
-    /**
-     * @var string КПП
-     */
-    public $kpp;
+    /** КПП */
+    public string $kpp;
 
-    /**
-     * @var string Регистрационный номер в ЦБ РФ
-     */
-    public $registrationNumber;
+    /** Регистрационный номер в ЦБ РФ */
+    public string $registrationNumber;
 
-    /**
-     * @var string Корреспондентский счет в ЦБ РФ
-     */
-    public $correspondentAccount;
+    /** Корреспондентский счет в ЦБ РФ */
+    public string $correspondentAccount;
 
-    /**
-     * @var array Наименование
-     */
-    public $name;
+    /** Наименование */
+    public array $name;
 
-    /**
-     * @var string Город для платежного поручения (поля справочника Tnp + Nnp)
-     */
-    public $paymentCity;
+    /** Город для платежного поручения (поля справочника Tnp + Nnp) */
+    public string $paymentCity;
 
-    /**
-     * @var array Тип кредитной организации
-     */
-    public $opf;
+    /** Тип кредитной организации */
+    public array $opf;
 
-    /**
-     * @var AddressResponse Адрес регистрации
-     */
-    public $address;
+    /** Адрес регистрации */
+    public AddressResponse $address;
 
-    /**
-     * @var array Состояние
-     */
-    public $state;
+    /** Состояние */
+    public array $state;
 
     public function __construct(array $data)
     {

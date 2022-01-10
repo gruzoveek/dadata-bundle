@@ -1,83 +1,51 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Model\Response\Suggest;
 
 class PostalUnitResponse extends SuggestResponse
 {
-    /**
-     * @var string Почтовый индекс
-     */
-    public $postalCode;
+    /** Почтовый индекс */
+    public string $postalCode;
 
-    /**
-     * @var string Признак, что отделение закрыто
-     */
-    public $isClosed;
+    /** Признак, что отделение закрыто */
+    public string $isClosed;
 
-    /**
-     * @var string Тип отделения
-     */
-    public $typeCode;
+    /** Тип отделения */
+    public string $typeCode;
 
-    /**
-     * @var string Адрес одной строкой
-     */
-    public $addressStr;
+    /** Адрес одной строкой */
+    public string $addressStr;
 
-    /**
-     * @var string КЛАДР-код населённого пункта
-     */
-    public $addressKladrId;
+    /** КЛАДР-код населённого пункта */
+    public string $addressKladrId;
 
-    /**
-     * @var string Код проверки адреса
-     */
-    public $addressQc;
+    /** Код проверки адреса */
+    public string $addressQc;
 
-    /**
-     * @var string Широта
-     */
-    public $geoLat;
+    /** Широта */
+    public string $geoLat;
 
-    /**
-     * @var string Долгота
-     */
-    public $geoLon;
+    /** Долгота */
+    public string $geoLon;
 
-    /**
-     * @var string Режим работы в понедельник
-     */
-    public $scheduleMon;
+    /** Режим работы в понедельник */
+    public string $scheduleMon;
 
-    /**
-     * @var string Режим работы во вторник
-     */
-    public $scheduleTue;
+    /** Режим работы во вторник */
+    public string $scheduleTue;
 
-    /**
-     * @var string Режим работы в среду
-     */
-    public $scheduleWed;
+    /** Режим работы в среду */
+    public string $scheduleWed;
 
-    /**
-     * @var string Режим работы в четверг
-     */
-    public $scheduleThu;
+    /** Режим работы в четверг */
+    public string $scheduleThu;
 
-    /**
-     * @var string Режим работы в пятницу
-     */
-    public $scheduleFri;
+    /** Режим работы в пятницу */
+    public string $scheduleFri;
 
-    /**
-     * @var string Режим работы в субботу
-     */
-    public $scheduleSat;
+    /** Режим работы в субботу */
+    public string $scheduleSat;
 
-    /**
-     * @var string Режим работы в воскресенье
-     */
-    public $scheduleSun;
+    /** Режим работы в воскресенье */
+    public string $scheduleSun;
 }

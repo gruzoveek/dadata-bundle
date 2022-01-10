@@ -1,7 +1,5 @@
 <?php
 
-declare(strict_types=1);
-
 namespace Velhron\DadataBundle\Service;
 
 use Symfony\Contracts\HttpClient\Exception\ExceptionInterface;
@@ -14,11 +12,9 @@ use Velhron\DadataBundle\Model\Response\Suggest\AddressResponse;
 
 class DadataIplocate extends AbstractService
 {
-    /**
-     * Обработчик для API по IP-адресу.
+    /** Обработчик для API по IP-адресу.
      *
-     * @throws DadataException|InvalidConfigException
-     */
+     * @throws DadataException|InvalidConfigException */
     private function handle(string $method, string $ip, array $options = []): ?AbstractResponse
     {
         /* @var AddressRequest $request */
@@ -35,9 +31,7 @@ class DadataIplocate extends AbstractService
             : null;
     }
 
-    /**
-     * {@inheritdoc}
-     */
+    /** {@inheritdoc} */
     protected function query(AbstractRequest $request): array
     {
         try {
@@ -56,8 +50,7 @@ class DadataIplocate extends AbstractService
         }
     }
 
-    /**
-     * Город по IP-адресу.
+    /** Город по IP-адресу.
      *
      * - Определяет город по IP-адресу в России
      * - Поддерживает как IPv4, так и IPv6 адреса
@@ -68,13 +61,9 @@ class DadataIplocate extends AbstractService
      *
      * @return AddressResponse|null Ответ
      *
-     * @throws DadataException|InvalidConfigException
-     */
+     * @throws DadataException|InvalidConfigException */
     public function iplocateAddress(string $ip, array $options = []): ?AddressResponse
     {
-        /** @var AddressResponse|null $response */
-        $response = $this->handle('iplocateAddress', $ip, $options);
-
-        return $response;
+        return $this->handle('iplocateAddress', $ip, $options);
     }
 }
