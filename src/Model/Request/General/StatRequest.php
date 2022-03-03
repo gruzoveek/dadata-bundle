@@ -1,6 +1,6 @@
 <?php
 
-namespace Velhron\DadataBundle\Model\Request\General;
+namespace Gruzoveek\DadataBundle\Model\Request\General;
 
 class StatRequest extends GeneralRequest
 {

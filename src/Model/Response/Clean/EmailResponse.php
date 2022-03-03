@@ -1,8 +1,8 @@
 <?php
 
-namespace Velhron\DadataBundle\Model\Response\Clean;
+namespace Gruzoveek\DadataBundle\Model\Response\Clean;
 
-use Velhron\DadataBundle\Traits\Email;
+use Gruzoveek\DadataBundle\Traits\Email;
 
 class EmailResponse extends CleanResponse
 {

@@ -1,31 +1,31 @@
 <?php
 
-namespace Velhron\DadataBundle\Service;
+namespace Gruzoveek\DadataBundle\Service;
 
 use Symfony\Contracts\HttpClient\Exception\ExceptionInterface;
-use Velhron\DadataBundle\Exception\DadataException;
-use Velhron\DadataBundle\Exception\InvalidConfigException;
-use Velhron\DadataBundle\Model\Request\AbstractRequest;
-use Velhron\DadataBundle\Model\Request\Suggest\SuggestRequest;
-use Velhron\DadataBundle\Model\Response\Find\AffiliatedPartyResponse;
-use Velhron\DadataBundle\Model\Response\Find\DeliveryResponse;
-use Velhron\DadataBundle\Model\Response\Suggest\AddressResponse;
-use Velhron\DadataBundle\Model\Response\Suggest\BankResponse;
-use Velhron\DadataBundle\Model\Response\Suggest\CarBrandResponse;
-use Velhron\DadataBundle\Model\Response\Suggest\CountryResponse;
-use Velhron\DadataBundle\Model\Response\Suggest\CurrencyResponse;
-use Velhron\DadataBundle\Model\Response\Suggest\EmailResponse;
-use Velhron\DadataBundle\Model\Response\Suggest\FioResponse;
-use Velhron\DadataBundle\Model\Response\Suggest\FmsUnitResponse;
-use Velhron\DadataBundle\Model\Response\Suggest\FnsUnitResponse;
-use Velhron\DadataBundle\Model\Response\Suggest\FtsUnitResponse;
-use Velhron\DadataBundle\Model\Response\Suggest\MetroResponse;
-use Velhron\DadataBundle\Model\Response\Suggest\Okpd2Response;
-use Velhron\DadataBundle\Model\Response\Suggest\OktmoResponse;
-use Velhron\DadataBundle\Model\Response\Suggest\Okved2Response;
-use Velhron\DadataBundle\Model\Response\Suggest\PartyResponse;
-use Velhron\DadataBundle\Model\Response\Suggest\PostalUnitResponse;
-use Velhron\DadataBundle\Model\Response\Suggest\RegionCourtResponse;
+use Gruzoveek\DadataBundle\Exception\DadataException;
+use Gruzoveek\DadataBundle\Exception\InvalidConfigException;
+use Gruzoveek\DadataBundle\Model\Request\AbstractRequest;
+use Gruzoveek\DadataBundle\Model\Request\Suggest\SuggestRequest;
+use Gruzoveek\DadataBundle\Model\Response\Find\AffiliatedPartyResponse;
+use Gruzoveek\DadataBundle\Model\Response\Find\DeliveryResponse;
+use Gruzoveek\DadataBundle\Model\Response\Suggest\AddressResponse;
+use Gruzoveek\DadataBundle\Model\Response\Suggest\BankResponse;
+use Gruzoveek\DadataBundle\Model\Response\Suggest\CarBrandResponse;
+use Gruzoveek\DadataBundle\Model\Response\Suggest\CountryResponse;
+use Gruzoveek\DadataBundle\Model\Response\Suggest\CurrencyResponse;
+use Gruzoveek\DadataBundle\Model\Response\Suggest\EmailResponse;
+use Gruzoveek\DadataBundle\Model\Response\Suggest\FioResponse;
+use Gruzoveek\DadataBundle\Model\Response\Suggest\FmsUnitResponse;
+use Gruzoveek\DadataBundle\Model\Response\Suggest\FnsUnitResponse;
+use Gruzoveek\DadataBundle\Model\Response\Suggest\FtsUnitResponse;
+use Gruzoveek\DadataBundle\Model\Response\Suggest\MetroResponse;
+use Gruzoveek\DadataBundle\Model\Response\Suggest\Okpd2Response;
+use Gruzoveek\DadataBundle\Model\Response\Suggest\OktmoResponse;
+use Gruzoveek\DadataBundle\Model\Response\Suggest\Okved2Response;
+use Gruzoveek\DadataBundle\Model\Response\Suggest\PartyResponse;
+use Gruzoveek\DadataBundle\Model\Response\Suggest\PostalUnitResponse;
+use Gruzoveek\DadataBundle\Model\Response\Suggest\RegionCourtResponse;
 
 class DadataSuggest extends AbstractService
 {

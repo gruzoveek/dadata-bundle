@@ -1,12 +1,10 @@
 <?php
 
-
-
-namespace Velhron\DadataBundle\Tests\Service;
+namespace Gruzoveek\DadataBundle\Tests\Service;
 
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 use Symfony\Contracts\HttpClient\ResponseInterface;
-use Velhron\DadataBundle\Service\DadataClean;
+use Gruzoveek\DadataBundle\Service\DadataClean;
 
 class DadataCleanTest extends DadataServiceTest
 {

@@ -1,14 +1,14 @@
 <?php
 
-namespace Velhron\DadataBundle\Service;
+namespace Gruzoveek\DadataBundle\Service;
 
 use Symfony\Contracts\HttpClient\Exception\ExceptionInterface;
-use Velhron\DadataBundle\Exception\DadataException;
-use Velhron\DadataBundle\Exception\InvalidConfigException;
-use Velhron\DadataBundle\Model\Request\AbstractRequest;
-use Velhron\DadataBundle\Model\Request\Iplocate\AddressRequest;
-use Velhron\DadataBundle\Model\Response\AbstractResponse;
-use Velhron\DadataBundle\Model\Response\Suggest\AddressResponse;
+use Gruzoveek\DadataBundle\Exception\DadataException;
+use Gruzoveek\DadataBundle\Exception\InvalidConfigException;
+use Gruzoveek\DadataBundle\Model\Request\AbstractRequest;
+use Gruzoveek\DadataBundle\Model\Request\Iplocate\AddressRequest;
+use Gruzoveek\DadataBundle\Model\Response\AbstractResponse;
+use Gruzoveek\DadataBundle\Model\Response\Suggest\AddressResponse;
 
 class DadataIplocate extends AbstractService
 {

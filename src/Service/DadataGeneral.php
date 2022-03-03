@@ -1,13 +1,13 @@
 <?php
 
-namespace Velhron\DadataBundle\Service;
+namespace Gruzoveek\DadataBundle\Service;
 
 use Symfony\Contracts\HttpClient\Exception\ExceptionInterface;
-use Velhron\DadataBundle\Exception\DadataException;
-use Velhron\DadataBundle\Exception\InvalidConfigException;
-use Velhron\DadataBundle\Model\Request\AbstractRequest;
-use Velhron\DadataBundle\Model\Request\General\StatRequest;
-use Velhron\DadataBundle\Model\Response\General\StatResponse;
+use Gruzoveek\DadataBundle\Exception\DadataException;
+use Gruzoveek\DadataBundle\Exception\InvalidConfigException;
+use Gruzoveek\DadataBundle\Model\Request\AbstractRequest;
+use Gruzoveek\DadataBundle\Model\Request\General\StatRequest;
+use Gruzoveek\DadataBundle\Model\Response\General\StatResponse;
 
 class DadataGeneral extends AbstractService
 {

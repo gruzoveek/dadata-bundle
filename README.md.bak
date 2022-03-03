@@ -1,7 +1,5 @@
 # Symfony DaData
 
-[![Build Status](https://travis-ci.com/Velhron/dadata-bundle.svg?token=tDXe7dqwQ2esgAZeQapf&branch=master)](https://travis-ci.com/Velhron/dadata-bundle)
-
 ## Описание
 
 Клон https://github.com/Velhron/dadata-bundle под php8 и Symfony 6
@@ -17,7 +15,7 @@ Symfony DaDataBundle предназначен для работы с API сер�
 Откройте командную консоль, перейдите в каталог вашего проекта и выполните:
 
 ```bash
-composer require velhron/dadata-bundle
+composer require gruzoveek/dadata-bundle
 ```
 
 ### Приложения, которые не используют Symfony Flex
@@ -28,7 +26,7 @@ composer require velhron/dadata-bundle
 стабильную версию этого пакета:
 
 ```bash
-composer require velhron/dadata-bundle
+composer require gruzoveek/dadata-bundle
 ```
 
 #### Шаг #2: Активация бандла
@@ -46,7 +44,7 @@ class AppKernel extends Kernel
     {
         $bundles = array(
             // ...
-            new Velhron\DadataBundle\VelhronDadataBundle(),
+            new Gruzoveek\DadataBundle\GruzoveekDadataBundle(),
         );
 
         // ...
@@ -63,7 +61,7 @@ class AppKernel extends Kernel
 ### Пример
 
 ```yaml
-velhron_dadata:
+gruzoveek_dadata:
     token: 'token'
     secret: 'secret'
     # Если у вас инфраструктура состоит из n-сервисов, которые обращаются в dadata, то для контроля запросов в dadata
@@ -83,7 +81,7 @@ velhron_dadata:
 
 // ...
 
-use Velhron\DadataBundle\Service\DadataSuggest;
+use Gruzoveek\DadataBundle\Service\DadataSuggest;
 
 class BaseController extends AbstractController
 {
@@ -169,4 +167,4 @@ $value = $response[0]->value;
 
 ## Лицензия
 
-[MIT License](https://opensource.org/licenses/mit-license) © Velhron
+[MIT License](https://opensource.org/licenses/mit-license) © Gruzoveek

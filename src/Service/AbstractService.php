@@ -1,12 +1,12 @@
 <?php
 
-namespace Velhron\DadataBundle\Service;
+namespace Gruzoveek\DadataBundle\Service;
 
 use Symfony\Contracts\HttpClient\HttpClientInterface;
-use Velhron\DadataBundle\Exception\DadataException;
-use Velhron\DadataBundle\Model\Request\AbstractRequest;
-use Velhron\DadataBundle\RequestFactory;
-use Velhron\DadataBundle\ResponseFactory;
+use Gruzoveek\DadataBundle\Exception\DadataException;
+use Gruzoveek\DadataBundle\Model\Request\AbstractRequest;
+use Gruzoveek\DadataBundle\RequestFactory;
+use Gruzoveek\DadataBundle\ResponseFactory;
 
 abstract class AbstractService
 {

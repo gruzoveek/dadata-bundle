@@ -1,6 +1,6 @@
 <?php
 
-namespace Velhron\DadataBundle\Model\Response\General;
+namespace Gruzoveek\DadataBundle\Model\Response\General;
 
 class StatResponse
 {

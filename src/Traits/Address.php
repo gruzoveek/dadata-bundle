@@ -1,6 +1,6 @@
 <?php
 
-namespace Velhron\DadataBundle\Traits;
+namespace Gruzoveek\DadataBundle\Traits;
 
 trait Address
 {

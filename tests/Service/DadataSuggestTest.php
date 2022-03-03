@@ -1,12 +1,10 @@
 <?php
 
-
-
-namespace Velhron\DadataBundle\Tests\Service;
+namespace Gruzoveek\DadataBundle\Tests\Service;
 
 use Symfony\Contracts\HttpClient\HttpClientInterface;
 use Symfony\Contracts\HttpClient\ResponseInterface;
-use Velhron\DadataBundle\Service\DadataSuggest;
+use Gruzoveek\DadataBundle\Service\DadataSuggest;
 
 class DadataSuggestTest extends DadataServiceTest
 {

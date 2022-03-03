@@ -1,6 +1,6 @@
 <?php
 
-namespace Velhron\DadataBundle\Exception;
+namespace Gruzoveek\DadataBundle\Exception;
 
 use Exception;
 use Symfony\Contracts\HttpClient\Exception\ExceptionInterface;

@@ -1,15 +1,13 @@
 <?php
 
-
-
-namespace Velhron\DadataBundle\Tests\Service;
+namespace Gruzoveek\DadataBundle\Tests\Service;
 
 use PHPUnit\Framework\TestCase;
 use Symfony\Component\HttpClient\MockHttpClient;
 use Symfony\Component\HttpClient\Response\MockResponse;
-use Velhron\DadataBundle\RequestFactory;
-use Velhron\DadataBundle\ResponseFactory;
-use Velhron\DadataBundle\Tests\TestingKernel;
+use Gruzoveek\DadataBundle\RequestFactory;
+use Gruzoveek\DadataBundle\ResponseFactory;
+use Gruzoveek\DadataBundle\Tests\TestingKernel;
 
 abstract class DadataServiceTest extends TestCase
 {

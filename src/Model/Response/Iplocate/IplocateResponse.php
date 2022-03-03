@@ -1,8 +1,8 @@
 <?php
 
-namespace Velhron\DadataBundle\Model\Response\Iplocate;
+namespace Gruzoveek\DadataBundle\Model\Response\Iplocate;
 
-use Velhron\DadataBundle\Model\Response\Suggest\SuggestResponse;
+use Gruzoveek\DadataBundle\Model\Response\Suggest\SuggestResponse;
 
 abstract class IplocateResponse extends SuggestResponse
 {

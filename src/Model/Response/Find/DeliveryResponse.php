@@ -1,8 +1,8 @@
 <?php
 
-namespace Velhron\DadataBundle\Model\Response\Find;
+namespace Gruzoveek\DadataBundle\Model\Response\Find;
 
-use Velhron\DadataBundle\Model\Response\Suggest\SuggestResponse;
+use Gruzoveek\DadataBundle\Model\Response\Suggest\SuggestResponse;
 
 class DeliveryResponse extends SuggestResponse
 {

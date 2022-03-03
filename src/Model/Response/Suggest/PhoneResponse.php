@@ -1,8 +1,8 @@
 <?php
 
-namespace Velhron\DadataBundle\Model\Response\Suggest;
+namespace Gruzoveek\DadataBundle\Model\Response\Suggest;
 
-use Velhron\DadataBundle\Traits\Phone;
+use Gruzoveek\DadataBundle\Traits\Phone;
 
 class PhoneResponse extends SuggestResponse
 {

@@ -1,8 +1,8 @@
 <?php
 
-namespace Velhron\DadataBundle\Model\Response\Suggest;
+namespace Gruzoveek\DadataBundle\Model\Response\Suggest;
 
-use Velhron\DadataBundle\Model\Response\AbstractResponse;
+use Gruzoveek\DadataBundle\Model\Response\AbstractResponse;
 
 abstract class SuggestResponse extends AbstractResponse
 {

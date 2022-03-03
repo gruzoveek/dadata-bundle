@@ -1,8 +1,8 @@
 <?php
 
-namespace Velhron\DadataBundle\Model\Request\Clean;
+namespace Gruzoveek\DadataBundle\Model\Request\Clean;
 
-use Velhron\DadataBundle\Model\Request\AbstractRequest;
+use Gruzoveek\DadataBundle\Model\Request\AbstractRequest;
 
 abstract class CleanRequest extends AbstractRequest
 {

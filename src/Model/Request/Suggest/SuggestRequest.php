@@ -1,8 +1,8 @@
 <?php
 
-namespace Velhron\DadataBundle\Model\Request\Suggest;
+namespace Gruzoveek\DadataBundle\Model\Request\Suggest;
 
-use Velhron\DadataBundle\Model\Request\AbstractRequest;
+use Gruzoveek\DadataBundle\Model\Request\AbstractRequest;
 
 abstract class SuggestRequest extends AbstractRequest
 {

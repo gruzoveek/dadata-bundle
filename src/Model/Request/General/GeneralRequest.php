@@ -1,8 +1,8 @@
 <?php
 
-namespace Velhron\DadataBundle\Model\Request\General;
+namespace Gruzoveek\DadataBundle\Model\Request\General;
 
-use Velhron\DadataBundle\Model\Request\AbstractRequest;
+use Gruzoveek\DadataBundle\Model\Request\AbstractRequest;
 
 abstract class GeneralRequest extends AbstractRequest
 {

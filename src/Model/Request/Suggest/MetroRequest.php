@@ -1,6 +1,6 @@
 <?php
 
-namespace Velhron\DadataBundle\Model\Request\Suggest;
+namespace Gruzoveek\DadataBundle\Model\Request\Suggest;
 
 class MetroRequest extends SuggestRequest
 {

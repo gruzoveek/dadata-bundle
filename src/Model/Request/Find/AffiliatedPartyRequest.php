@@ -1,8 +1,8 @@
 <?php
 
-namespace Velhron\DadataBundle\Model\Request\Find;
+namespace Gruzoveek\DadataBundle\Model\Request\Find;
 
-use Velhron\DadataBundle\Model\Request\Suggest\SuggestRequest;
+use Gruzoveek\DadataBundle\Model\Request\Suggest\SuggestRequest;
 
 class AffiliatedPartyRequest extends SuggestRequest
 {

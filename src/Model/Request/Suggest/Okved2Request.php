@@ -1,6 +1,6 @@
 <?php
 
-namespace Velhron\DadataBundle\Model\Request\Suggest;
+namespace Gruzoveek\DadataBundle\Model\Request\Suggest;
 
 class Okved2Request extends SuggestRequest
 {

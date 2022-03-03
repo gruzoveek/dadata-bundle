@@ -1,8 +1,8 @@
 <?php
 
-namespace Velhron\DadataBundle\Model\Request\Geolocate;
+namespace Gruzoveek\DadataBundle\Model\Request\Geolocate;
 
-use Velhron\DadataBundle\Model\Request\Suggest\SuggestRequest;
+use Gruzoveek\DadataBundle\Model\Request\Suggest\SuggestRequest;
 
 abstract class GeolocateRequest extends SuggestRequest
 {

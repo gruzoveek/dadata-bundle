@@ -1,8 +1,8 @@
 <?php
 
-namespace Velhron\DadataBundle\Model\Response\Suggest;
+namespace Gruzoveek\DadataBundle\Model\Response\Suggest;
 
-use Velhron\DadataBundle\Traits\Email;
+use Gruzoveek\DadataBundle\Traits\Email;
 
 class EmailResponse extends SuggestResponse
 {

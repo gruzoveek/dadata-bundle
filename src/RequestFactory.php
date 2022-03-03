@@ -1,8 +1,8 @@
 <?php
-namespace Velhron\DadataBundle;
+namespace Gruzoveek\DadataBundle;
 
-use Velhron\DadataBundle\Exception\InvalidConfigException;
-use Velhron\DadataBundle\Model\Request\AbstractRequest;
+use Gruzoveek\DadataBundle\Exception\InvalidConfigException;
+use Gruzoveek\DadataBundle\Model\Request\AbstractRequest;
 
 class RequestFactory
 {

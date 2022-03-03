@@ -1,20 +1,20 @@
 <?php
 
-namespace Velhron\DadataBundle\Service;
+namespace Gruzoveek\DadataBundle\Service;
 
 use Symfony\Contracts\HttpClient\Exception\ExceptionInterface;
-use Velhron\DadataBundle\Exception\DadataException;
-use Velhron\DadataBundle\Exception\InvalidConfigException;
-use Velhron\DadataBundle\Model\Request\AbstractRequest;
-use Velhron\DadataBundle\Model\Request\Clean\CleanRequest;
-use Velhron\DadataBundle\Model\Response\AbstractResponse;
-use Velhron\DadataBundle\Model\Response\Clean\AddressResponse;
-use Velhron\DadataBundle\Model\Response\Clean\BirthdateResponse;
-use Velhron\DadataBundle\Model\Response\Clean\EmailResponse;
-use Velhron\DadataBundle\Model\Response\Clean\NameResponse;
-use Velhron\DadataBundle\Model\Response\Clean\PassportResponse;
-use Velhron\DadataBundle\Model\Response\Clean\PhoneResponse;
-use Velhron\DadataBundle\Model\Response\Clean\VehicleResponse;
+use Gruzoveek\DadataBundle\Exception\DadataException;
+use Gruzoveek\DadataBundle\Exception\InvalidConfigException;
+use Gruzoveek\DadataBundle\Model\Request\AbstractRequest;
+use Gruzoveek\DadataBundle\Model\Request\Clean\CleanRequest;
+use Gruzoveek\DadataBundle\Model\Response\AbstractResponse;
+use Gruzoveek\DadataBundle\Model\Response\Clean\AddressResponse;
+use Gruzoveek\DadataBundle\Model\Response\Clean\BirthdateResponse;
+use Gruzoveek\DadataBundle\Model\Response\Clean\EmailResponse;
+use Gruzoveek\DadataBundle\Model\Response\Clean\NameResponse;
+use Gruzoveek\DadataBundle\Model\Response\Clean\PassportResponse;
+use Gruzoveek\DadataBundle\Model\Response\Clean\PhoneResponse;
+use Gruzoveek\DadataBundle\Model\Response\Clean\VehicleResponse;
 
 class DadataClean extends AbstractService
 {

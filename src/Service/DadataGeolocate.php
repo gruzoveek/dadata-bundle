@@ -1,14 +1,14 @@
 <?php
 
-namespace Velhron\DadataBundle\Service;
+namespace Gruzoveek\DadataBundle\Service;
 
 use Symfony\Contracts\HttpClient\Exception\ExceptionInterface;
-use Velhron\DadataBundle\Exception\DadataException;
-use Velhron\DadataBundle\Exception\InvalidConfigException;
-use Velhron\DadataBundle\Model\Request\AbstractRequest;
-use Velhron\DadataBundle\Model\Request\Geolocate\GeolocateRequest;
-use Velhron\DadataBundle\Model\Response\Suggest\AddressResponse;
-use Velhron\DadataBundle\Model\Response\Suggest\PostalUnitResponse;
+use Gruzoveek\DadataBundle\Exception\DadataException;
+use Gruzoveek\DadataBundle\Exception\InvalidConfigException;
+use Gruzoveek\DadataBundle\Model\Request\AbstractRequest;
+use Gruzoveek\DadataBundle\Model\Request\Geolocate\GeolocateRequest;
+use Gruzoveek\DadataBundle\Model\Response\Suggest\AddressResponse;
+use Gruzoveek\DadataBundle\Model\Response\Suggest\PostalUnitResponse;
 
 class DadataGeolocate extends AbstractService
 {

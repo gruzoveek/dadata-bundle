@@ -1,8 +1,8 @@
 <?php
 
-namespace Velhron\DadataBundle\Model\Response\Clean;
+namespace Gruzoveek\DadataBundle\Model\Response\Clean;
 
-use Velhron\DadataBundle\Traits\Address;
+use Gruzoveek\DadataBundle\Traits\Address;
 
 class AddressResponse extends CleanResponse
 {

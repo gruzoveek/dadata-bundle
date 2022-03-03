@@ -1,6 +1,6 @@
 <?php
 
-namespace Velhron\DadataBundle\Model\Response\Clean;
+namespace Gruzoveek\DadataBundle\Model\Response\Clean;
 
 class BirthdateResponse extends CleanResponse
 {

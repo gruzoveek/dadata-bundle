@@ -1,6 +1,6 @@
 <?php
 
-namespace Velhron\DadataBundle\Model\Response;
+namespace Gruzoveek\DadataBundle\Model\Response;
 
 abstract class AbstractResponse
 {

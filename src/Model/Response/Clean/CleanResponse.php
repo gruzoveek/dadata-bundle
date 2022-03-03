@@ -1,8 +1,8 @@
 <?php
 
-namespace Velhron\DadataBundle\Model\Response\Clean;
+namespace Gruzoveek\DadataBundle\Model\Response\Clean;
 
-use Velhron\DadataBundle\Model\Response\AbstractResponse;
+use Gruzoveek\DadataBundle\Model\Response\AbstractResponse;
 
 abstract class CleanResponse extends AbstractResponse
 {

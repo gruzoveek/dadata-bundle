@@ -1,8 +1,8 @@
 <?php
 
-namespace Velhron\DadataBundle;
+namespace Gruzoveek\DadataBundle;
 
-use Velhron\DadataBundle\Exception\InvalidConfigException;
+use Gruzoveek\DadataBundle\Exception\InvalidConfigException;
 
 class Resolver
 {

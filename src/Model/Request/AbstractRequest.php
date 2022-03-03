@@ -1,6 +1,6 @@
 <?php
 
-namespace Velhron\DadataBundle\Model\Request;
+namespace Gruzoveek\DadataBundle\Model\Request;
 
 abstract class AbstractRequest
 {

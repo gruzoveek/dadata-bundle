@@ -1,6 +1,6 @@
 <?php
 
-namespace Velhron\DadataBundle\Model\Request\Clean;
+namespace Gruzoveek\DadataBundle\Model\Request\Clean;
 
 class VehicleRequest extends CleanRequest
 {

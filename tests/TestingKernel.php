@@ -1,11 +1,11 @@
 <?php
 
-namespace Velhron\DadataBundle\Tests;
+namespace Gruzoveek\DadataBundle\Tests;
 
 use JetBrains\PhpStorm\Pure;
 use Symfony\Component\Config\Loader\LoaderInterface;
 use Symfony\Component\HttpKernel\Kernel;
-use Velhron\DadataBundle\VelhronDadataBundle;
+use Gruzoveek\DadataBundle\GruzoveekDadataBundle;
 
 class TestingKernel extends Kernel
 {
@@ -16,7 +16,7 @@ class TestingKernel extends Kernel
     public function registerBundles(): array
     {
         return [
-            new VelhronDadataBundle(),
+            new GruzoveekDadataBundle(),
         ];
     }
 

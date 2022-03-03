@@ -1,6 +1,6 @@
 <?php
 
-namespace Velhron\DadataBundle\Model\Response\Suggest;
+namespace Gruzoveek\DadataBundle\Model\Response\Suggest;
 
 class MetroResponse extends SuggestResponse
 {

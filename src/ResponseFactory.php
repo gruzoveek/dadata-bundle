@@ -1,9 +1,9 @@
 <?php
 
-namespace Velhron\DadataBundle;
+namespace Gruzoveek\DadataBundle;
 
-use Velhron\DadataBundle\Exception\InvalidConfigException;
-use Velhron\DadataBundle\Model\Response\AbstractResponse;
+use Gruzoveek\DadataBundle\Exception\InvalidConfigException;
+use Gruzoveek\DadataBundle\Model\Response\AbstractResponse;
 
 class ResponseFactory
 {

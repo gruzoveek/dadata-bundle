@@ -26,12 +26,12 @@
     },
     "autoload": {
         "psr-4": {
-            "Velhron\\DadataBundle\\": "src/"
+            "Gruzoveek\\DadataBundle\\": "src/"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Velhron\\DadataBundle\\Tests\\": "tests"
+            "Gruzoveek\\DadataBundle\\Tests\\": "tests"
         }
     }
 }

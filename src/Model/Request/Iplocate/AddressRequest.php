@@ -1,9 +1,9 @@
 <?php
 
-namespace Velhron\DadataBundle\Model\Request\Iplocate;
+namespace Gruzoveek\DadataBundle\Model\Request\Iplocate;
 
-use Velhron\DadataBundle\Model\Request\AbstractRequest;
-use Velhron\DadataBundle\Model\Request\Suggest\SuggestRequest;
+use Gruzoveek\DadataBundle\Model\Request\AbstractRequest;
+use Gruzoveek\DadataBundle\Model\Request\Suggest\SuggestRequest;
 
 class AddressRequest extends SuggestRequest
 {
