@@ -5,32 +5,32 @@ namespace Gruzoveek\DadataBundle\Traits;
 trait Phone
 {
     /** телефон одной строкой как в ЕГРЮЛ */
-    public string $source;
+    public ?string $source;
 
     /** тип телефона (мобильный, стационарный, ...) */
-    public string $type;
+    public ?string $type;
 
     /** код страны */
-    public string $countryCode;
+    public ?string $countryCode;
 
     /** код города / DEF-код */
-    public string $cityCode;
+    public ?string $cityCode;
 
     /** локальный номер телефона */
-    public string $number;
+    public ?string $number;
 
     /** оператор связи */
-    public string $provider;
+    public ?string $provider;
 
     /** регион */
-    public string $region;
+    public ?string $region;
 
     /** город (только для стационарных телефонов) */
-    public string $city;
+    public ?string $city;
 
     /** часовой пояс */
-    public string $timezone;
+    public ?string $timezone;
 
     /** контактное лицо */
-    public string $contact;
+    public ?string $contact;
 }

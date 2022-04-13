@@ -20,7 +20,7 @@ abstract class SuggestResponse extends AbstractResponse
         foreach ($data['data'] ?? [] as $property => $value) {
             $camelCaseProperty = $this->toCamelCase($property);
             if (property_exists($this, $camelCaseProperty)) {
-                $this->{$camelCaseProperty} = $value ?: '';
+                $this->{$camelCaseProperty} = $value;
             }
         }
     }

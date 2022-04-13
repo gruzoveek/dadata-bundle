@@ -5,172 +5,172 @@ namespace Gruzoveek\DadataBundle\Traits;
 trait Address
 {
     /** Индекс */
-    public string $postalCode;
+    public ?string $postalCode;
 
     /** Страна */
-    public string $country;
+    public ?string $country;
 
     /** ISO-код страны (двухсимвольный) */
-    public string $countryIsoCode;
+    public ?string $countryIsoCode;
 
     /** Федеральный округ */
-    public string $federalDistrict;
+    public ?string $federalDistrict;
 
     /** Код ФИАС региона */
-    public string $regionFiasId;
+    public ?string $regionFiasId;
 
     /** Код КЛАДР региона */
-    public string $regionKladrId;
+    public ?string $regionKladrId;
 
     /** ISO-код региона */
-    public string $regionIsoCode;
+    public ?string $regionIsoCode;
 
     /** Регион с типом */
-    public string $regionWithType;
+    public ?string $regionWithType;
 
     /** Тип региона (сокращенный) */
-    public string $regionType;
+    public ?string $regionType;
 
     /** Тип региона */
-    public string $regionTypeFull;
+    public ?string $regionTypeFull;
 
     /** Регион */
-    public string $region;
+    public ?string $region;
 
     /** Код ФИАС района в регионе */
-    public string $areaFiasId;
+    public ?string $areaFiasId;
 
     /** Код КЛАДР района в регионе */
-    public string $areaKladrId;
+    public ?string $areaKladrId;
 
     /** Район в регионе с типом */
-    public string $areaWithType;
+    public ?string $areaWithType;
 
     /** Тип района в регионе (сокращенный) */
-    public string $areaType;
+    public ?string $areaType;
 
     /** Тип района в регионе */
-    public string $areaTypeFull;
+    public ?string $areaTypeFull;
 
     /** Район в регионе */
-    public string $area;
+    public ?string $area;
 
     /** Код ФИАС города */
-    public string $cityFiasId;
+    public ?string $cityFiasId;
 
     /** Код КЛАДР города */
-    public string $cityKladrId;
+    public ?string $cityKladrId;
 
     /** Город с типом */
-    public string $cityWithType;
+    public ?string $cityWithType;
 
     /** Тип города (сокращенный) */
-    public string $cityType;
+    public ?string $cityType;
 
     /** Тип города */
-    public string $cityTypeFull;
+    public ?string $cityTypeFull;
 
     /** Город */
-    public string $city;
+    public ?string $city;
 
     /** Код ФИАС района города (заполняется, только если район есть в ФИАС) */
-    public string $cityDistrictFiasId;
+    public ?string $cityDistrictFiasId;
 
     /** Код КЛАДР района города (не заполняется) */
-    public string $cityDistrictKladrId;
+    public ?string $cityDistrictKladrId;
 
     /** Район города с типом */
-    public string $cityDistrictWithType;
+    public ?string $cityDistrictWithType;
 
     /** Тип района города (сокращенный) */
-    public string $cityDistrictType;
+    public ?string $cityDistrictType;
 
     /** Тип района города */
-    public string $cityDistrictTypeFull;
+    public ?string $cityDistrictTypeFull;
 
     /** Район города */
-    public string $cityDistrict;
+    public ?string $cityDistrict;
 
     /** Код ФИАС нас. пункта */
-    public string $settlementFiasId;
+    public ?string $settlementFiasId;
 
     /** Код КЛАДР нас. пункта */
-    public string $settlementKladrId;
+    public ?string $settlementKladrId;
 
     /** Населенный пункт с типом */
-    public string $settlementWithType;
+    public ?string $settlementWithType;
 
     /** Тип населенного пункта (сокращенный) */
-    public string $settlementType;
+    public ?string $settlementType;
 
     /** Тип населенного пункта */
-    public string $settlementTypeFull;
+    public ?string $settlementTypeFull;
 
     /** Населенный пункт */
-    public string $settlement;
+    public ?string $settlement;
 
     /** Код ФИАС улицы */
-    public string $streetFiasId;
+    public ?string $streetFiasId;
 
     /** Код КЛАДР улицы */
-    public string $streetKladrId;
+    public ?string $streetKladrId;
 
     /** Улица с типом */
-    public string $streetWithType;
+    public ?string $streetWithType;
 
     /** Тип улицы (сокращенный) */
-    public string $streetType;
+    public ?string $streetType;
 
     /** Тип улицы */
-    public string $streetTypeFull;
+    public ?string $streetTypeFull;
 
     /** Улица */
-    public string $street;
+    public ?string $street;
 
     /** Код ФИАС дома */
-    public string $houseFiasId;
+    public ?string $houseFiasId;
 
     /** Код КЛАДР дома */
-    public string $houseKladrId;
+    public ?string $houseKladrId;
 
     /** Тип дома (сокращенный) */
-    public string $houseType;
+    public ?string $houseType;
 
     /** Тип дома */
-    public string $houseTypeFull;
+    public ?string $houseTypeFull;
 
     /** Дом */
-    public string $house;
+    public ?string $house;
 
     /** Тип корпуса/строения (сокращенный) */
-    public string $blockType;
+    public ?string $blockType;
 
     /** Тип корпуса/строения */
-    public string $blockTypeFull;
+    public ?string $blockTypeFull;
 
     /** Корпус/строение */
-    public string $block;
+    public ?string $block;
 
     /** Подъезд */
-    public string $entrance;
+    public ?string $entrance;
 
     /** Этаж */
-    public string $floor;
+    public ?string $floor;
 
     /** Тип квартиры (сокращенный) */
-    public string $flatType;
+    public ?string $flatType;
 
     /** Тип квартиры */
-    public string $flatTypeFull;
+    public ?string $flatTypeFull;
 
     /** Квартира */
-    public string $flat;
+    public ?string $flat;
 
     /** Абонентский ящик */
-    public string $postalBox;
+    public ?string $postalBox;
 
     /** Код ФИАС */
-    public string $fiasId;
+    public ?string $fiasId;
 
     /** Уровень детализации, до которого адрес найден в ФИАС
      *
@@ -184,13 +184,13 @@ trait Address
      * 8 — дом
      * 65 — планировочная структура
      * -1 — иностранный или пустой */
-    public string $fiasLevel;
+    public ?string $fiasLevel;
 
     /** Код КЛАДР */
-    public string $kladrId;
+    public ?string $kladrId;
 
     /** Идентификатор объекта в базе GeoNames. Для российских адресов не заполняется */
-    public string $geonameId;
+    public ?string $geonameId;
 
     /** Признак центра района или региона
      *
@@ -199,30 +199,30 @@ trait Address
      * 3 — центр района и региона (Томская обл, г Томск)
      * 4 — центральный район региона (Тюменская обл, Тюменский р-н)
      * 0 — ничего из перечисленного (Московская обл, г Балашиха) */
-    public string $capitalMarker;
+    public ?string $capitalMarker;
 
     /** Код ОКАТО */
-    public string $okato;
+    public ?string $okato;
 
     /** Код ОКТМО */
-    public string $oktmo;
+    public ?string $oktmo;
 
     /** Код ИФНС для физических лиц */
-    public string $taxOffice;
+    public ?string $taxOffice;
 
     /** Код ИФНС для организаций */
-    public string $taxOfficeLegal;
+    public ?string $taxOfficeLegal;
 
     /** Список исторических названий объекта нижнего уровня
      *
      * Если подсказка до улицы — это прошлые названия этой улицы, если до города — города */
-    public array $historyValues;
+    public ?array $historyValues;
 
     /** Координаты: широта */
-    public string $geoLat;
+    public ?string $geoLat;
 
     /** Координаты: долгота */
-    public string $geoLon;
+    public ?string $geoLon;
 
     /** Код точности координат
      *
@@ -232,10 +232,10 @@ trait Address
      * 3 — населенный пункт
      * 4 — город
      * 5 — координаты не определены */
-    public string $qcGeo;
+    public ?string $qcGeo;
 
     /** Иерархический код адреса в ФИАС (СС+РРР+ГГГ+ППП+СССС+УУУУ+ДДДД) */
-    public string $fiasCode;
+    public ?string $fiasCode;
 
     /** Признак актуальности адреса в ФИАС
      *
@@ -243,32 +243,32 @@ trait Address
      * 1–50 — переименован
      * 51   — переподчинен
      * 99   — удален */
-    public string $fiasActualityState;
+    public ?string $fiasActualityState;
 
     /** Административный округ (только для Москвы) */
-    public string $cityArea;
+    public ?string $cityArea;
 
     /** Внутри кольцевой? */
-    public string $beltwayHit;
+    public ?string $beltwayHit;
 
     /** Расстояние от кольцевой в километрах */
-    public string $beltwayDistance;
+    public ?string $beltwayDistance;
 
     /** Площадь квартиры */
-    public string $flatArea;
+    public ?string $flatArea;
 
     /** Рыночная стоимость м² */
-    public string $squareMeterPrice;
+    public ?string $squareMeterPrice;
 
     /** Рыночная стоимость квартиры */
-    public string $flatPrice;
+    public ?string $flatPrice;
 
     /** Часовой пояс
      *
      * Часовой пояс города для России, часовой пояс страны — для иностранных адресов.
      * Если у страны несколько поясов, вернёт минимальный и максимальный через слеш: UTC+5/UTC+6. */
-    public string $timezone;
+    public ?string $timezone;
 
     /** Список ближайших станций метро (до трёх штук) */
-    public array $metro;
+    public ?array $metro;
 }
